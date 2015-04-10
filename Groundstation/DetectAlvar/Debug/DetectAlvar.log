@@ -1,0 +1,110 @@
+﻿Build started 4/10/2015 3:37:27 PM.
+     1>Project "D:\Nick\Documents\RedHawkQuad\Groundstation\DetectAlvar\DetectAlvar.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (SampleDetectMarkers.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\OpenCV\build\include\ /I"C:\Program Files (x86)\ALVAR 2.0.0 sdk win32 vs2010\include" /ID:\freeglut\include\GL /I"C:\Program Files (x86)\ALVAR 2.0.0 sdk win32 vs2010\sample" /I"C:\Program Files (x86)\ALVAR 2.0.0 sdk win32 vs2010\include\platform" /ID:\OpenCV\build\include\opencv /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _CRT_SECURE_NO_WARNINGS /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt DetectAlvar.cpp
+         DetectAlvar.cpp
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturedevice.h(82): warning C4251: 'alvar::CaptureDevice::mCaptureType' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'alvar::CaptureDevice'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturedevice.h(83): warning C4251: 'alvar::CaptureDevice::mId' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'alvar::CaptureDevice'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturedevice.h(84): warning C4251: 'alvar::CaptureDevice::mDescription' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'alvar::CaptureDevice'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(238): warning C4251: 'alvar::Index::val' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'alvar::Index'
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(254): warning C4251: 'alvar::Histogram::bins' : class 'std::map<alvar::Index,int,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::Histogram'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(255): warning C4251: 'alvar::Histogram::dim_binsize' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Histogram'
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(277): warning C4251: 'alvar::HistogramSubpixel::acc_dim0' : class 'std::map<alvar::Index,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::HistogramSubpixel'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=double
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(278): warning C4251: 'alvar::HistogramSubpixel::acc_dim1' : class 'std::map<alvar::Index,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::HistogramSubpixel'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=double
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(279): warning C4251: 'alvar::HistogramSubpixel::acc_dim2' : class 'std::map<alvar::Index,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::HistogramSubpixel'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=double
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(354): warning C4251: 'alvar::Serialization::filename' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'alvar::Serialization'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturefactory.h(130): warning C4251: 'alvar::CaptureFactory::mDestroyer' : class 'alvar::CaptureFactory::CaptureFactoryDestroyer' needs to have dll-interface to be used by clients of class 'alvar::CaptureFactory'
+                 c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturefactory.h(113) : see declaration of 'alvar::CaptureFactory::CaptureFactoryDestroyer'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\camera.h(48): warning C4251: 'alvar::ProjPoints::object_points' : class 'std::vector<CvPoint3D64f,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'alvar::ProjPoints'
+                 with
+                 [
+                     _Ty=CvPoint3D64f
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\camera.h(55): warning C4251: 'alvar::ProjPoints::image_points' : class 'std::vector<CvPoint2D64f,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'alvar::ProjPoints'
+                 with
+                 [
+                     _Ty=CvPoint2D64f
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\camera.h(57): warning C4251: 'alvar::ProjPoints::point_counts' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'alvar::ProjPoints'
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\connectedcomponents.h(73): warning C4251: 'alvar::Labeling::blob_corners' : class 'std::vector<std::vector<alvar::PointDouble,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of class 'alvar::Labeling'
+                 with
+                 [
+                     _Ty=alvar::PointDouble
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\bitset.h(64): warning C4251: 'alvar::Bitset::bits' : class 'std::deque<bool,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Bitset'
+                 with
+                 [
+                     _Ty=bool
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\marker.h(168): warning C4251: 'alvar::Marker::marker_points' : class 'std::vector<alvar::PointDouble,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Marker'
+                 with
+                 [
+                     _Ty=alvar::PointDouble
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\marker.h(170): warning C4251: 'alvar::Marker::marker_corners' : class 'std::vector<alvar::PointDouble,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Marker'
+                 with
+                 [
+                     _Ty=alvar::PointDouble
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\marker.h(172): warning C4251: 'alvar::Marker::marker_corners_img' : class 'std::vector<alvar::PointDouble,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Marker'
+                 with
+                 [
+                     _Ty=alvar::PointDouble
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\marker.h(174): warning C4251: 'alvar::Marker::marker_margin_w' : class 'std::vector<alvar::PointDouble,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Marker'
+                 with
+                 [
+                     _Ty=alvar::PointDouble
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\marker.h(176): warning C4251: 'alvar::Marker::marker_margin_b' : class 'std::vector<alvar::PointDouble,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Marker'
+                 with
+                 [
+                     _Ty=alvar::PointDouble
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\markerdetector.h(67): warning C4251: 'alvar::MarkerDetectorImpl::map_edge_length' : class 'std::map<unsigned long,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::MarkerDetectorImpl'
+                 with
+                 [
+                     _Kty=unsigned long
+         ,            _Ty=double
+                 ]
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Nick\Documents\RedHawkQuad\Groundstation\Debug\DetectAlvar.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\OpenCV\build\x86\vc12\lib /LIBPATH:"C:\Program Files (x86)\ALVAR 2.0.0 sdk win32 vs2010\bin" /LIBPATH:D:\freeglut\lib freeglut.lib alvar200.lib alvar200d.lib alvarplatform200.lib alvarplatform200d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib opencv_calib3d2410.lib opencv_core2410.lib opencv_flann2410.lib opencv_highgui2410.lib opencv_legacy2410.lib opencv_nonfree2410.lib opencv_ocl2410.lib opencv_stitching2410.lib opencv_ts2410.lib opencv_videostab2410.lib opencv_calib3d2410d.lib opencv_core2410d.lib opencv_flann2410d.lib opencv_highgui2410d.lib opencv_legacy2410d.lib opencv_nonfree2410d.lib opencv_ocl2410d.lib opencv_stitching2410d.lib opencv_ts2410d.lib opencv_videostab2410d.lib opencv_contrib2410.lib opencv_features2d2410.lib opencv_gpu2410.lib opencv_imgproc2410.lib opencv_ml2410.lib opencv_objdetect2410.lib opencv_photo2410.lib opencv_superres2410.lib opencv_video2410.lib opencv_contrib2410d.lib opencv_features2d2410d.lib opencv_gpu2410d.lib opencv_imgproc2410d.lib opencv_ml2410d.lib opencv_objdetect2410d.lib opencv_photo2410d.lib opencv_superres2410d.lib opencv_video2410d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Nick\Documents\RedHawkQuad\Groundstation\Debug\DetectAlvar.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Nick\Documents\RedHawkQuad\Groundstation\Debug\DetectAlvar.lib" /MACHINE:X86 Debug\DetectAlvar.obj
+     1>LINK : fatal error LNK1104: cannot open file 'freeglutd.lib'
+     1>Done Building Project "D:\Nick\Documents\RedHawkQuad\Groundstation\DetectAlvar\DetectAlvar.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.19
