@@ -50,14 +50,26 @@ void loop()
     if(distance0 < 100) {
       Serial.write('f');
     }
+    else{
+      Serial.write('0');
+    }
     if(distance1 < 100) {
       Serial.write('b');
+    }
+    else{
+      Serial.write('0');
     }
     if(distance2 < 100) {
       Serial.write('l');
     }
+    else{
+      Serial.write('0');
+    }
     if(distance3 < 100) {
       Serial.write('r');
+    }
+    else{
+      Serial.write('0');
     }
     Serial.println();
     delay(1000);
@@ -66,12 +78,12 @@ void loop()
   else { 
     //Laser
     static unsigned long t = 0;
-    if (millis() > (t + 2000)){ // Таймер запуска при отсутствии данных от датчика
+    if (millis() > (t + 2000)){ // Start timer when no data from the sensor
       Serial1.write("*00084553#");
       t = millis();
     }
     getdist();
-    if (recdata) t = millis(); // сброс таймера при получении данных от датчика
+    if (recdata) t = millis(); // Reset the timer when it receives data from the sensor
   }
 }
 
@@ -99,8 +111,8 @@ int getdist(){
   if (Serial1.available() > 0){
     while (Serial1.available() > 0){
       litera = Serial1.read();
-      if (litera == 42) { //Если принят знак "*"
-        data = true;      //то устанавливаем признак начала пакета
+      if (litera == 42) { // If adopted by the sign "*"
+        data = true;      // then set the sign of the beginning of the packet
       }
 
       if (litera == 35) { //Если принят знак "#"
