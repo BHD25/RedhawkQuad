@@ -18,6 +18,11 @@ int rc=0;
 #define trigPin3 29
 #define echoPin3 28
 
+#define sen1 40
+#define sen2 41
+#define sen3 42
+#define sen4 43
+
 char mode = '1';
 
 void setup()
@@ -31,7 +36,15 @@ void setup()
   pinMode(echoPin2, INPUT);
   pinMode(trigPin3, OUTPUT);
   pinMode(echoPin3, INPUT);
-
+  pinMode(sen1, OUTPUT);
+  pinMode(sen2, OUTPUT);
+  pinMode(sen3, OUTPUT);
+  pinMode(sen4, OUTPUT);
+  digitalWrite(sen1, LOW);
+  digitalWrite(sen2, LOW);
+  digitalWrite(sen3, LOW);
+  digitalWrite(sen4, LOW);
+  
   Serial.begin(115200);
   Serial1.begin(115200);
 }
@@ -48,30 +61,29 @@ void loop()
     long distance2 = getSonar(trigPin2, echoPin2);
     long distance3 = getSonar(trigPin3, echoPin3);
     if(distance0 < 100) {
-      Serial.write('f');
+      digitalWrite(sen1, HIGH);
     }
     else{
-      Serial.write('0');
+      digitalWrite(sen1, LOW);
     }
     if(distance1 < 100) {
-      Serial.write('b');
+      digitalWrite(sen2, HIGH);
     }
     else{
-      Serial.write('0');
+      digitalWrite(sen2, LOW);
     }
     if(distance2 < 100) {
-      Serial.write('l');
+      digitalWrite(sen3, HIGH);
     }
     else{
-      Serial.write('0');
+      digitalWrite(sen3, LOW);
     }
     if(distance3 < 100) {
-      Serial.write('r');
+      digitalWrite(sen4, HIGH);
     }
     else{
-      Serial.write('0');
+      digitalWrite(sen4, LOW);
     }
-    Serial.println();
     delay(1000);
   }
 
