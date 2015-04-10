@@ -1,9 +1,17 @@
 import time
+import serial
 import autopilot
 import RPi.GPIO as GPIO
 from RPIO import PWM
 
 GPIO.setmode(GPIO.BCM)
+
+GPIO.setup(8, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
+GPIO.setup(7, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
+GPIO.setup(9, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
+GPIO.setup(11, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
+
+ser = serial.Serial('/dev/ttyACM0', 115200)
 
 # 1 roll
 # 2 pitch
@@ -21,8 +29,16 @@ autopilot.takeOff()
 navigating = 1
 movDirection = 2
 search = 0
+serInput = ''
 
 while(navigating == 1):
+	serInput = ser.readline()
+
+	sensor1 = GPIO.input(9)
+	sensor2 = GPIO.input(7)
+	sensor3 = GPIO.input(8)
+	sensor4 = GPIO.input(11)
+	
 	if(sensor1 == 0 && sensor2 == 1 && movDirection == 2):
 		autopilot.stop()
 		autopilot.forward()
