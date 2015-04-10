@@ -1,0 +1,209 @@
+﻿Build started 4/10/2015 2:33:00 PM.
+     1>Project "d:\Nick\documents\AlvarProject\SampleDetectMarkers\SampleDetectMarkers.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ID:\OpenCV\build\include\ /I"C:\Program Files (x86)\ALVAR 2.0.0 sdk win32 vs2010\include" /ID:\freeglut\include\GL /I"C:\Program Files (x86)\ALVAR 2.0.0 sdk win32 vs2010\sample" /I"C:\Program Files (x86)\ALVAR 2.0.0 sdk win32 vs2010\include\platform" /ID:\OpenCV\build\include\opencv /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CvTestbed.cpp GlutViewer.cpp SampleMarkerDetector.cpp
+         SampleMarkerDetector.cpp
+     1>d:\opencv\build\include\opencv2\flann\logger.h(66): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturedevice.h(82): warning C4251: 'alvar::CaptureDevice::mCaptureType' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'alvar::CaptureDevice'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturedevice.h(83): warning C4251: 'alvar::CaptureDevice::mId' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'alvar::CaptureDevice'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturedevice.h(84): warning C4251: 'alvar::CaptureDevice::mDescription' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'alvar::CaptureDevice'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(238): warning C4251: 'alvar::Index::val' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'alvar::Index'
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(254): warning C4251: 'alvar::Histogram::bins' : class 'std::map<alvar::Index,int,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::Histogram'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(255): warning C4251: 'alvar::Histogram::dim_binsize' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Histogram'
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(277): warning C4251: 'alvar::HistogramSubpixel::acc_dim0' : class 'std::map<alvar::Index,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::HistogramSubpixel'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=double
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(278): warning C4251: 'alvar::HistogramSubpixel::acc_dim1' : class 'std::map<alvar::Index,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::HistogramSubpixel'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=double
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(279): warning C4251: 'alvar::HistogramSubpixel::acc_dim2' : class 'std::map<alvar::Index,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::HistogramSubpixel'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=double
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(354): warning C4251: 'alvar::Serialization::filename' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'alvar::Serialization'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturefactory.h(130): warning C4251: 'alvar::CaptureFactory::mDestroyer' : class 'alvar::CaptureFactory::CaptureFactoryDestroyer' needs to have dll-interface to be used by clients of class 'alvar::CaptureFactory'
+                 c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturefactory.h(113) : see declaration of 'alvar::CaptureFactory::CaptureFactoryDestroyer'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\camera.h(48): warning C4251: 'alvar::ProjPoints::object_points' : class 'std::vector<CvPoint3D64f,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'alvar::ProjPoints'
+                 with
+                 [
+                     _Ty=CvPoint3D64f
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\camera.h(55): warning C4251: 'alvar::ProjPoints::image_points' : class 'std::vector<CvPoint2D64f,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'alvar::ProjPoints'
+                 with
+                 [
+                     _Ty=CvPoint2D64f
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\camera.h(57): warning C4251: 'alvar::ProjPoints::point_counts' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'alvar::ProjPoints'
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\connectedcomponents.h(73): warning C4251: 'alvar::Labeling::blob_corners' : class 'std::vector<std::vector<alvar::PointDouble,std::allocator<_Ty>>,std::allocator<std::vector<_Ty,std::allocator<_Ty>>>>' needs to have dll-interface to be used by clients of class 'alvar::Labeling'
+                 with
+                 [
+                     _Ty=alvar::PointDouble
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\bitset.h(64): warning C4251: 'alvar::Bitset::bits' : class 'std::deque<bool,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Bitset'
+                 with
+                 [
+                     _Ty=bool
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\marker.h(168): warning C4251: 'alvar::Marker::marker_points' : class 'std::vector<alvar::PointDouble,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Marker'
+                 with
+                 [
+                     _Ty=alvar::PointDouble
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\marker.h(170): warning C4251: 'alvar::Marker::marker_corners' : class 'std::vector<alvar::PointDouble,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Marker'
+                 with
+                 [
+                     _Ty=alvar::PointDouble
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\marker.h(172): warning C4251: 'alvar::Marker::marker_corners_img' : class 'std::vector<alvar::PointDouble,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Marker'
+                 with
+                 [
+                     _Ty=alvar::PointDouble
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\marker.h(174): warning C4251: 'alvar::Marker::marker_margin_w' : class 'std::vector<alvar::PointDouble,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Marker'
+                 with
+                 [
+                     _Ty=alvar::PointDouble
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\marker.h(176): warning C4251: 'alvar::Marker::marker_margin_b' : class 'std::vector<alvar::PointDouble,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Marker'
+                 with
+                 [
+                     _Ty=alvar::PointDouble
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\markerdetector.h(67): warning C4251: 'alvar::MarkerDetectorImpl::map_edge_length' : class 'std::map<unsigned long,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::MarkerDetectorImpl'
+                 with
+                 [
+                     _Kty=unsigned long
+         ,            _Ty=double
+                 ]
+         GlutViewer.cpp
+     1>d:\opencv\build\include\opencv2\flann\result_set.h(306): warning C4003: not enough actual parameters for macro 'max'
+     1>d:\opencv\build\include\opencv2\flann\result_set.h(428): warning C4003: not enough actual parameters for macro 'max'
+     1>d:\opencv\build\include\opencv2\flann\lsh_index.h(215): warning C4003: not enough actual parameters for macro 'max'
+     1>d:\opencv\build\include\opencv2\flann\lsh_index.h(281): warning C4003: not enough actual parameters for macro 'max'
+     1>d:\opencv\build\include\opencv2\objdetect\objdetect.hpp(338): error C2589: '(' : illegal token on right side of '::'
+     1>d:\opencv\build\include\opencv2\objdetect\objdetect.hpp(338): error C2059: syntax error : '::'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(238): warning C4251: 'alvar::Index::val' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'alvar::Index'
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(254): warning C4251: 'alvar::Histogram::bins' : class 'std::map<alvar::Index,int,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::Histogram'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(255): warning C4251: 'alvar::Histogram::dim_binsize' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Histogram'
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(277): warning C4251: 'alvar::HistogramSubpixel::acc_dim0' : class 'std::map<alvar::Index,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::HistogramSubpixel'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=double
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(278): warning C4251: 'alvar::HistogramSubpixel::acc_dim1' : class 'std::map<alvar::Index,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::HistogramSubpixel'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=double
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(279): warning C4251: 'alvar::HistogramSubpixel::acc_dim2' : class 'std::map<alvar::Index,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::HistogramSubpixel'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=double
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(354): warning C4251: 'alvar::Serialization::filename' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'alvar::Serialization'
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(40): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(41): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(43): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(44): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(46): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(47): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(49): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(50): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(57): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(66): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(73): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(316): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(318): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(343): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
+     1>d:\nick\documents\alvarproject\sampledetectmarkers\glutviewer.cpp(370): warning C4305: 'argument' : truncation from 'double' to 'GLclampf'
+         CvTestbed.cpp
+     1>d:\opencv\build\include\opencv2\flann\logger.h(66): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturedevice.h(82): warning C4251: 'alvar::CaptureDevice::mCaptureType' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'alvar::CaptureDevice'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturedevice.h(83): warning C4251: 'alvar::CaptureDevice::mId' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'alvar::CaptureDevice'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturedevice.h(84): warning C4251: 'alvar::CaptureDevice::mDescription' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'alvar::CaptureDevice'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(238): warning C4251: 'alvar::Index::val' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'alvar::Index'
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(254): warning C4251: 'alvar::Histogram::bins' : class 'std::map<alvar::Index,int,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::Histogram'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(255): warning C4251: 'alvar::Histogram::dim_binsize' : class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'alvar::Histogram'
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(277): warning C4251: 'alvar::HistogramSubpixel::acc_dim0' : class 'std::map<alvar::Index,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::HistogramSubpixel'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=double
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(278): warning C4251: 'alvar::HistogramSubpixel::acc_dim1' : class 'std::map<alvar::Index,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::HistogramSubpixel'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=double
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(279): warning C4251: 'alvar::HistogramSubpixel::acc_dim2' : class 'std::map<alvar::Index,double,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'alvar::HistogramSubpixel'
+                 with
+                 [
+                     _Kty=alvar::Index
+         ,            _Ty=double
+                 ]
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\util.h(354): warning C4251: 'alvar::Serialization::filename' : class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'alvar::Serialization'
+     1>c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturefactory.h(130): warning C4251: 'alvar::CaptureFactory::mDestroyer' : class 'alvar::CaptureFactory::CaptureFactoryDestroyer' needs to have dll-interface to be used by clients of class 'alvar::CaptureFactory'
+                 c:\program files (x86)\alvar 2.0.0 sdk win32 vs2010\include\platform\capturefactory.h(113) : see declaration of 'alvar::CaptureFactory::CaptureFactoryDestroyer'
+         Generating Code...
+     1>Done Building Project "d:\Nick\documents\AlvarProject\SampleDetectMarkers\SampleDetectMarkers.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.09
