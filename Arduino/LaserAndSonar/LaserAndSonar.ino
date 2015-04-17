@@ -84,7 +84,7 @@ void loop()
     else{
       digitalWrite(sen4, LOW);
     }
-    delay(1000);
+    delay(500);
   }
 
   else { 
