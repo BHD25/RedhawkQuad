@@ -15,7 +15,7 @@ GPIO.setup(7, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 GPIO.setup(9, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 GPIO.setup(11, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 
-ser = serial.Serial('/dev/ttyACM0', 115200)
+#ser = serial.Serial('/dev/ttyACM0', 115200)
 
 # 1 roll
 # 2 pitch
@@ -27,25 +27,26 @@ ser = serial.Serial('/dev/ttyACM0', 115200)
 # 7 dummy2
 # 8 dummy3
 
-autopilot.initialize()
-autopilot.takeOff()
-
-navigating = 1
-movDirection = 2
-search = 0
-serInput = ''
-
 def handle(clientsocket):
+	print('Made connection')
+	autopilot.initialize()
+	autopilot.takeOff()
+
+	navigating = 1
+	movDirection = 2
+	search = 0
+	serInput = ''
+
 	while(navigating == 1):
-		serInput = ser.readline()
+		#serInput = ser.readline()
 		sensor1 = GPIO.input(9)
 		sensor2 = GPIO.input(7)
 		sensor3 = GPIO.input(8)
 		sensor4 = GPIO.input(11)
 		buf = clientsocket.recv(MAX_LENGTH)
-		if buf == 'stop': return
+		if buf == '': return
 	
-		if(sensor1 == 0 && sensor2 == 1 && movDirection == 2):
+		if(sensor1 == 0 and sensor2 == 1 and movDirection == 2):
 			autopilot.stop()
 			autopilot.forward()
 			movDirection = 1
@@ -54,7 +55,7 @@ def handle(clientsocket):
 		#else if(sensor1 == 0 && sensor2 == 1 && movDirection == 1):
 
 
-		if(sensor1 == 0 && sensor2 == 0 && movDirection == 4):
+		if(sensor1 == 0 and sensor2 == 0 and movDirection == 4):
 			autopilot.stop()
 			time.sleep(.3)
 			autopilot.forward()
@@ -66,25 +67,25 @@ def handle(clientsocket):
 			autopilot.stop()
 			print('Wall vanished\n')
 
-		if(sensor1 == 1 && sensor4 == 0 && sensor2 == 1 && movDirection == 1):
+		if(sensor1 == 1 and sensor4 == 0 and sensor2 == 1 and movDirection == 1):
 			autopilot.stop()
 			time.sleep(.3)
 			autopilot.strafeL()
 			movDirection = 4
 			print('Moving left\n')
 
-		if(sensor3 == 1 && sensor2 == 0 && movDirection == 2):
+		if(sensor3 == 1 and sensor2 == 0 and movDirection == 2):
 			autopilot.strafeR()
 			movDirection = 2
 			print('Moving right\n')		
 
-		if(sensor1 == 1 && sensor2 == 1 && sensor3 == 1 && sensor4 == 1):
+		if(sensor1 == 1 and sensor2 == 1 and sensor3 == 1 and sensor4 == 1):
 			autopilot.land()
 			time.sleep(5)
 			flying = 0
 			print('Can\'t fly\n')
 
-		if(sensor1 == 1 && sensor4 == 1):
+		if(sensor1 == 1 and sensor4 == 1):
 			navigating = 0
 			autopilot.stop()
 			autopilot.turnR()
@@ -93,28 +94,30 @@ def handle(clientsocket):
 			search = 1
 			print('Reached back corner\n')
 
-		if(pipe == "kill"):
+		if(buf == "kill"):
 			autopilot.land()
-			time.sleep(5)
+			time.sleep(10)
+			autopilot.landed()
 			flying = 0
 			print('Killing operation\n')
 
 	seen = 0
 
-	while(search == 1 && buf != 'stop'):
+	#while(search == 1 and buf != 'stop'):
 		# Capture image and look for ball
-		if(seen = 1):
+		
 
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 PORT = 1000
-HOST = '127.0.0.1'
+HOST = '192.168.0.100'
 
 serversocket.bind((HOST, PORT))
 serversocket.listen(10)
 
 while 1:
+	print('Waiting for connection!')
 	#accept connections from outside
 	(clientsocket, address) = serversocket.accept()
 
