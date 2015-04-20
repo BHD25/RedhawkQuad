@@ -186,5 +186,9 @@ def land():
 #		PWM.set_duty_cycle(THROTTLE, throttle)
 #		time.sleep(1)
 
+def landed():
+	SERVO.set_servo(MODE, MODESTAB)
+	SERVO.set_servo(THROTTLE, THRMIN)
+
 def setAltitude():
 	SERVO.set_servo(MODE, MODEALT)
