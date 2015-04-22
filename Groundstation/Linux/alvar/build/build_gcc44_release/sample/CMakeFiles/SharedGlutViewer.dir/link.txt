@@ -1,0 +1,2 @@
+/usr/bin/ar cq libSharedGlutViewer.a  CMakeFiles/SharedGlutViewer.dir/GlutViewer.cpp.o
+/usr/bin/ranlib libSharedGlutViewer.a

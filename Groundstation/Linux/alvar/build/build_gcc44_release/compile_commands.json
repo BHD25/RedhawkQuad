@@ -1,0 +1,117 @@
+[
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleCamCalib.dir/SampleCamCalib.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleCamCalib.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleCamCalib.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleCvTestbed.dir/SampleCvTestbed.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleCvTestbed.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleCvTestbed.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleFilter.dir/SampleFilter.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleFilter.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleFilter.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleIntegralImage.dir/SampleIntegralImage.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleIntegralImage.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleIntegralImage.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleLabeling.dir/SampleLabeling.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleLabeling.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleLabeling.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleMarkerCreator.dir/SampleMarkerCreator.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMarkerCreator.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMarkerCreator.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleMarkerDetector.dir/SampleMarkerDetector.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMarkerDetector.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMarkerDetector.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleMarkerHide.dir/SampleMarkerHide.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMarkerHide.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMarkerHide.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleMarkerlessCreator.dir/SampleMarkerlessCreator.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMarkerlessCreator.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMarkerlessCreator.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleMarkerlessDetector.dir/SampleMarkerlessDetector.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMarkerlessDetector.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMarkerlessDetector.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleMultiMarker.dir/SampleMultiMarker.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMultiMarker.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMultiMarker.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleMultiMarkerBundle.dir/SampleMultiMarkerBundle.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMultiMarkerBundle.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleMultiMarkerBundle.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleOptimization.dir/SampleOptimization.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleOptimization.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleOptimization.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SamplePointcloud.dir/SamplePointcloud.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SamplePointcloud.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SamplePointcloud.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SampleTrack.dir/SampleTrack.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleTrack.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/SampleTrack.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SharedGlutViewer.dir/GlutViewer.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/GlutViewer.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/GlutViewer.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/sample",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/SharedSamples.dir/CvTestbed.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/CvTestbed.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/sample/CvTestbed.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/demo",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/Demo3DMarkerField.dir/Demo3DMarkerField.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/demo/Demo3DMarkerField.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/demo/Demo3DMarkerField.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/demo",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/DemoFern.dir/DemoFern.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/demo/DemoFern.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/demo/DemoFern.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/demo",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/DemoMarkerField.dir/DemoMarkerField.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/demo/DemoMarkerField.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/demo/DemoMarkerField.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/demo",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/DemoMarkerHide.dir/DemoMarkerHide.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/demo/DemoMarkerHide.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/demo/DemoMarkerHide.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/demo",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/DemoModel2Marker.dir/DemoModel2Marker.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/demo/DemoModel2Marker.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/demo/DemoModel2Marker.cpp"
+},
+{
+  "directory": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/build/build_gcc44_release/demo",
+  "command": "/usr/bin/g++-4.4    -O3 -DNDEBUG -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/opencv/include/opencv -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include -I/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/include/platform    -o CMakeFiles/DemoSfM.dir/DemoSfM.cpp.o -c /home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/demo/DemoSfM.cpp",
+  "file": "/home/nick/Documents/RedhawkQuad/Groundstation/Linux/alvar/demo/DemoSfM.cpp"
+}
+]

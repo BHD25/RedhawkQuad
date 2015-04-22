@@ -1,0 +1,1 @@
+/home/nick/Documents/RedhawkQuad/Groundstation/Linux/BallDetection/CMakeFiles/BallDetection.dir
