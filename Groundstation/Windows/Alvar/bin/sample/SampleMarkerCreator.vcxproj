@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{53DC1CE4-4B09-4F36-A22B-9552B78873B7}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>SampleMarkerCreator</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\bin\sample\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SampleMarkerCreator.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">samplemarkercreatord</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\bin\sample\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SampleMarkerCreator.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">samplemarkercreator</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\bin\sample\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">SampleMarkerCreator.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">samplemarkercreator</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\bin\sample\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">SampleMarkerCreator.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">samplemarkercreator</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include\opencv;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\glut-3.7.6-bin;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;4251;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include\opencv;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\glut-3.7.6-bin;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include\opencv;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\glut-3.7.6-bin;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_core240d.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_calib3d240d.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_features2d240d.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_flann240d.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_highgui240d.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_imgproc240d.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_legacy240d.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_ml240d.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_video240d.lib;..\alvar200d.lib;..\alvarplatform200d.lib;Debug\SharedSamples.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/sample/Debug/samplemarkercreatord.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/sample/Debug/samplemarkercreatord.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include\opencv;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\glut-3.7.6-bin;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4251;4275;4251;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include\opencv;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\glut-3.7.6-bin;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include\opencv;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\glut-3.7.6-bin;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_core240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_calib3d240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_features2d240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_flann240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_highgui240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_imgproc240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_legacy240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_ml240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_video240.lib;..\alvar200.lib;..\alvarplatform200.lib;Release\SharedSamples.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/sample/Release/samplemarkercreator.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/sample/Release/samplemarkercreator.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include\opencv;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\glut-3.7.6-bin;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4251;4275;4251;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include\opencv;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\glut-3.7.6-bin;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include\opencv;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\glut-3.7.6-bin;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_core240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_calib3d240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_features2d240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_flann240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_highgui240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_imgproc240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_legacy240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_ml240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_video240.lib;..\alvar200.lib;..\alvarplatform200.lib;MinSizeRel\SharedSamples.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/sample/MinSizeRel/samplemarkercreator.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/sample/MinSizeRel/samplemarkercreator.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include\opencv;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\glut-3.7.6-bin;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275;4251;4275</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NOMINMAX;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include\opencv;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\glut-3.7.6-bin;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\include\opencv;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\glut-3.7.6-bin;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\include\platform;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_core240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_calib3d240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_features2d240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_flann240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_highgui240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_imgproc240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_legacy240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_ml240.lib;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\OpenCV-2.4.0\lib\opencv_video240.lib;..\alvar200.lib;..\alvarplatform200.lib;RelWithDebInfo\SharedSamples.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/sample/RelWithDebInfo/samplemarkercreator.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/sample/RelWithDebInfo/samplemarkercreator.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\sample\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/sample/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar -BD:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin --check-stamp-file D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\bin\sample\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/sample/CMakeLists.txt;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\sample\CMakeLists.txt;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\sample\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\bin\sample\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/sample/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar -BD:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin --check-stamp-file D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\bin\sample\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/sample/CMakeLists.txt;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\sample\CMakeLists.txt;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\sample\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\bin\sample\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/sample/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar -BD:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin --check-stamp-file D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\bin\sample\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/sample/CMakeLists.txt;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\sample\CMakeLists.txt;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\sample\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\bin\sample\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/sample/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar -BD:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin --check-stamp-file D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\bin\sample\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/sample/CMakeLists.txt;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\sample\CMakeLists.txt;D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\sample\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\bin\sample\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\sample\SampleMarkerCreator.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/sample/SharedSamples.vcxproj">
+      <Project>5B319073-36F6-4839-8596-8F0B52D465FA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/ZERO_CHECK.vcxproj">
+      <Project>AF7814EF-8CF2-4435-9186-E5EDE33D54E1</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
