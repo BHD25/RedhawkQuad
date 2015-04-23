@@ -61,21 +61,21 @@ void loop()
     long distance1 = getSonar(trigPin1, echoPin1);
     long distance2 = getSonar(trigPin2, echoPin2);
     long distance3 = getSonar(trigPin3, echoPin3);
-    if(distance0 < 100) {
+    if(distance0 < 60) {
       digitalWrite(sen1, HIGH);
       //Serial.println("Front");
     }
     else{
       digitalWrite(sen1, LOW);
     }
-    if(distance1 < 50) {
+    if(distance1 < 60) {
       digitalWrite(sen2, HIGH);
       //Serial.println("Right");
     }
     else{
       digitalWrite(sen2, LOW);
     }
-    if(distance2 < 100) {
+    if(distance2 < 60) {
       digitalWrite(sen3, HIGH);
       //Serial.println("Back");
     }
