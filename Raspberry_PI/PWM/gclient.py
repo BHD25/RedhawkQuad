@@ -1,7 +1,7 @@
 import socket
 import sys
 
-HOST = '192.168.0.100'
+HOST = '192.168.0.101'
 PORT = 1000
 
 s = socket.socket()
