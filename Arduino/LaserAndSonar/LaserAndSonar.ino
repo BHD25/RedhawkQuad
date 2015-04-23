@@ -24,6 +24,7 @@ int rc=0;
 #define sen4 43
 
 char mode = '1';
+int countz = 0;
 
 void setup()
 {
@@ -62,24 +63,30 @@ void loop()
     long distance3 = getSonar(trigPin3, echoPin3);
     if(distance0 < 100) {
       digitalWrite(sen1, HIGH);
+      //Serial.println("Front");
     }
     else{
       digitalWrite(sen1, LOW);
     }
-    if(distance1 < 100) {
+    if(distance1 < 50) {
       digitalWrite(sen2, HIGH);
+      //Serial.println("Right");
     }
     else{
       digitalWrite(sen2, LOW);
     }
     if(distance2 < 100) {
       digitalWrite(sen3, HIGH);
+      //Serial.println("Back");
     }
     else{
       digitalWrite(sen3, LOW);
     }
-    if(distance3 < 100) {
+    if(distance3 < 60) {
       digitalWrite(sen4, HIGH);
+      countz = countz + 1;
+      Serial.print("Left");
+      Serial.println(countz);
     }
     else{
       digitalWrite(sen4, LOW);
