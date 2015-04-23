@@ -1,0 +1,76 @@
+# CMake generation dependency list for this directory.
+D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/CMakeLists.txt
+D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/CMakeFiles/3.2.2/CMakeSystem.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeSystemSpecificInitialize.cmake
+D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/CMakeFiles/3.2.2/CMakeCCompiler.cmake
+D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/CMakeFiles/3.2.2/CMakeCXXCompiler.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeSystemSpecificInformation.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeGenericSystem.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/WindowsPaths.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeCInformation.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC-C.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC.cmake
+D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/bin/CMakeFiles/3.2.2/CMakeRCCompiler.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeRCInformation.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeCommonLanguageInclude.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeCXXInformation.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Compiler/MSVC-CXX.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC-CXX.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Platform/Windows-MSVC.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeCommonLanguageInclude.cmake
+D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/build/cmake/FindOpenCV.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindOpenGL.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindGLUT.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindOpenSceneGraph.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Findosg_functions.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindosgViewer.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Findosg_functions.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindosgGA.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Findosg_functions.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindosgDB.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Findosg_functions.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindosgUtil.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Findosg_functions.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindosgText.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Findosg_functions.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Findosg.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/Findosg_functions.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindOpenThreads.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+D:/Nick/Documents/RedHawkQuad/Groundstation/Windows/Alvar/build/cmake/FindALVAR.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+D:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake

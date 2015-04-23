@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Nick\Documents\RedHawkQuad\Groundstation\Windows\Alvar\bin\CMakeFiles\b671f03fcac58187bac8653f9d65a73c\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6DA4AB83-BA41-4118-B3DB-CAEAD85E88BE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
