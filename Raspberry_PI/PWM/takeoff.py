@@ -50,15 +50,43 @@ def handle(clientsocket):
 			sensor4 = GPIO.input(11)
 			buf = clientsocket.recv(MAX_LENGTH)
 			if buf == '': return
-	
-			if(sensor1 == 0 and sensor2 == 1 and movDirection == 2):
+
+			# Initial move right
+			if(sensor3 == 1 and sensor1 == 0 and sensor4 == 0 and sensor2 == 0 and movDirection == 2):
+				autopilot.strafeR()
+				autopilot.forward()
+				movDirection = 2
+				print('Moving right\n')
+
+			if(sensor3 == 0 and sensor1 == 0 and sensor4 == 0 and sensor2 == 0 and movDirection == 2):
+				autopilot.strafeR()
+				autopilot.backward()
+				movDirection = 2
+				print('Moving right\n')
+
+			# Found right wall, start moving forward
+			if(sensor1 == 0 and sensor2 == 1 and sensor3 == 0 and sensor4 == 0 and movDirection == 2):
 				autopilot.stop()
 				autopilot.forward()
 				movDirection = 1
 				print('Moving forward\n')
 
-			#else if(sensor1 == 0 && sensor2 == 1 && movDirection == 1):
+			# Following right wall
+			if(sensor1 == 0 and sensor2 == 1 and sensor3 == 0 and sensor4 == 0 and movDirection == 1):
+				#autopilot.stop()
+				autopilot.forward()
+				autopilot.strafeL()
+				movDirection = 1
+				print('Moving forward\n')
 
+			if(sensor1 == 0 and sensor2 == 0 and sensor3 == 0 and sensor4 == 0 and movDirection == 2):
+				#autopilot.stop()
+				autopilot.forward()
+				autopilot.strafeR()
+				movDirection = 1
+				print('Moving forward\n')
+
+			# Next thing
 
 			if(sensor1 == 0 and sensor2 == 0 and movDirection == 4):
 				autopilot.stop()
@@ -79,10 +107,6 @@ def handle(clientsocket):
 				movDirection = 4
 				print('Moving left\n')
 
-			if(sensor3 == 1 and sensor2 == 0 and movDirection == 2):
-				autopilot.strafeR()
-				movDirection = 2
-				print('Moving right\n')		
 
 			if(sensor1 == 1 and sensor2 == 1 and sensor3 == 1 and sensor4 == 1):
 				autopilot.land()
