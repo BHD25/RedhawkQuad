@@ -76,53 +76,79 @@ def handle(clientsocket):
 				#autopilot.stop()
 				autopilot.forward()
 				autopilot.strafeL()
-				movDirection = 1
+				#movDirection = 1
 				print('Moving forward\n')
 
 			if(sensor1 == 0 and sensor2 == 0 and sensor3 == 0 and sensor4 == 0 and movDirection == 2):
 				#autopilot.stop()
 				autopilot.forward()
 				autopilot.strafeR()
-				movDirection = 1
+				#movDirection = 1
 				print('Moving forward\n')
 
-			# Next thing
-
-			if(sensor1 == 0 and sensor2 == 0 and movDirection == 4):
+			# Hit a right back corner
+			if(sensor1 == 1 and sensor4 == 0 and sensor2 == 1 and sensor3 == 0 and movDirection == 1):
 				autopilot.stop()
-				time.sleep(.3)
-				autopilot.forward()
-				time.sleep(.5)
-				autopilot.stop()
-				movDirection = 2
-				autopilot.strafeR()
-				time.sleep(1)
-				autopilot.stop()
-				print('Wall vanished\n')
-
-			if(sensor1 == 1 and sensor4 == 0 and sensor2 == 1 and movDirection == 1):
-				autopilot.stop()
-				time.sleep(.3)
+				#time.sleep(.3)
 				autopilot.strafeL()
 				movDirection = 4
 				print('Moving left\n')
 
+			# Moving left following front wall
+			if(sensor1 == 1 and sensor4 == 0 and sensor2 == 0 and sensor3 == 0 and movDirection == 4):
+				autopilot.stop()
+				#time.sleep(.3)
+				autopilot.strafeL()
+				autopilot.backward()
+				#movDirection = 4
+				print('Moving left\n')
 
+			if(sensor1 == 0 and sensor4 == 0 and sensor2 == 0 and sensor3 == 0 and movDirection == 4):
+				autopilot.stop()
+				#time.sleep(.3)
+				autopilot.strafeL()
+				autopilot.forward()
+				#movDirection = 4
+				print('Moving left\n')
+
+			# Lost front wall
+			if(sensor1 == 0 and sensor2 == 0 and sensor3 == 0 and sensor4 == 0 and movDirection == 4):
+				autopilot.stop()
+				time.sleep(.3)
+				audopilot.strafeL()
+				time.sleep(.3)
+				autopilot.stop()
+				time.sleep(.5)
+				autopilot.forward()
+				time.sleep(.5)
+				autopilot.stop()
+				time.sleep(.5)
+				movDirection = 2
+				while (sensor3 == 0):
+					autopilot.strafeR()
+					time.sleep(1)
+					autopilot.stop()
+				print('Wall vanished\n')
+
+			# Found back left corner
+			if(sensor1 == 1 and sensor2 == 0 and sensor3 == 0 and sensor4 == 1 and movDirection == 4):
+				autopilot.stop()
+				time.sleep(1)
+				autopilot.turnR()
+				time.sleep(1.5)
+				autopilot.stop()
+				time.sleep(1)
+				search = 1
+				navigating = 0
+
+			# No direction to fly
 			if(sensor1 == 1 and sensor2 == 1 and sensor3 == 1 and sensor4 == 1):
 				autopilot.land()
 				time.sleep(5)
 				flying = 0
 				print('Can\'t fly\n')
 
-			if(sensor1 == 1 and sensor4 == 1):
-				navigating = 0
-				autopilot.stop()
-				autopilot.turnR()
-				time.sleep(.5)
-				autopilot.stop()
-				search = 1
-				print('Reached back corner\n')
-
+			# Emergency kill command
 			if(buf == "kill"):
 				autopilot.land()
 				time.sleep(10)
