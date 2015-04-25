@@ -6,17 +6,17 @@ boolean recdata = true;
 boolean data;
 int buf[64];
 int rc = 0;
-#define frontTrig 23
-#define frontEcho 22
+#define frontTrig 47
+#define frontEcho 49
 
-#define rightTrig 25
-#define rightEcho 24
+#define rightTrig A0
+#define rightEcho A1
 
-#define backTrig 27
-#define backEcho 26
+#define backTrig 13
+#define backEcho 12
 
-#define leftTrig 29
-#define leftEcho 28
+#define leftTrig 7
+#define leftEcho 6
 
 #define senFront 40
 #define senRight 41
