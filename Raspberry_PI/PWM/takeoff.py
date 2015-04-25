@@ -28,10 +28,11 @@ GPIO.setup(11, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 # 8 dummy3
 
 def handle(clientsocket):
-	print('Made connection')
+	print('Made connection\n')
 	while(1):
 		buf = clientsocket.recv(MAX_LENGTH)
-		navigating = 0
+		navigating = 1
+		autopilot.initialize()
 		movDirection = 2
 		search = 0
 		serInput = ''
@@ -43,16 +44,22 @@ def handle(clientsocket):
 		if buf == '': return
 
 		while(navigating == 1):
+			print("In navigation\n")
 			#serInput = ser.readline()
 			sensor1 = GPIO.input(9)
+			print("Sensor1 = " + str(sensor1))
 			sensor2 = GPIO.input(7)
+			print("Sensor2 = " + str(sensor2))
 			sensor3 = GPIO.input(8)
+			print("Sensor3 = " + str(sensor3))
 			sensor4 = GPIO.input(11)
+			print("Sensor4 = " + str(sensor4))
 			buf = clientsocket.recv(MAX_LENGTH)
 			if buf == '': return
 
 			# Initial move right
 			if(sensor3 == 1 and sensor1 == 0 and sensor4 == 0 and sensor2 == 0 and movDirection == 2):
+				print("Initial move right")
 				autopilot.strafeR()
 				autopilot.forward()
 				movDirection = 2
@@ -62,24 +69,27 @@ def handle(clientsocket):
 				autopilot.strafeR()
 				autopilot.backward()
 				movDirection = 2
-				print('Moving right\n')
+				print('Moving right-ADJ\n')
 
 			# Found right wall, start moving forward
-			if(sensor1 == 0 and sensor2 == 1 and sensor3 == 0 and sensor4 == 0 and movDirection == 2):
+			if(sensor1 == 0 and sensor2 == 1 and (sensor3 == 0 or sensor3 == 1) and sensor4 == 0 and movDirection == 2):
+				print("Found right wall, start moving forward")
 				autopilot.stop()
+				time.sleep(1)
 				autopilot.forward()
 				movDirection = 1
 				print('Moving forward\n')
 
 			# Following right wall
 			if(sensor1 == 0 and sensor2 == 1 and sensor3 == 0 and sensor4 == 0 and movDirection == 1):
+				print("Following right wall")
 				#autopilot.stop()
 				autopilot.forward()
 				autopilot.strafeL()
 				#movDirection = 1
 				print('Moving forward\n')
 
-			if(sensor1 == 0 and sensor2 == 0 and sensor3 == 0 and sensor4 == 0 and movDirection == 2):
+			if(sensor1 == 0 and sensor2 == 0 and sensor3 == 0 and sensor4 == 0 and movDirection == 1):
 				#autopilot.stop()
 				autopilot.forward()
 				autopilot.strafeR()
@@ -88,6 +98,7 @@ def handle(clientsocket):
 
 			# Hit a right back corner
 			if(sensor1 == 1 and sensor4 == 0 and sensor2 == 1 and sensor3 == 0 and movDirection == 1):
+				print("Hit a right back corner")
 				autopilot.stop()
 				#time.sleep(.3)
 				autopilot.strafeL()
@@ -96,6 +107,7 @@ def handle(clientsocket):
 
 			# Moving left following front wall
 			if(sensor1 == 1 and sensor4 == 0 and sensor2 == 0 and sensor3 == 0 and movDirection == 4):
+				print("Moving left following front wall")
 				autopilot.stop()
 				#time.sleep(.3)
 				autopilot.strafeL()
@@ -113,6 +125,7 @@ def handle(clientsocket):
 
 			# Lost front wall
 			if(sensor1 == 0 and sensor2 == 0 and sensor3 == 0 and sensor4 == 0 and movDirection == 4):
+				print("Lost front wall")
 				autopilot.stop()
 				time.sleep(.3)
 				audopilot.strafeL()
@@ -132,6 +145,7 @@ def handle(clientsocket):
 
 			# Found back left corner
 			if(sensor1 == 1 and sensor2 == 0 and sensor3 == 0 and sensor4 == 1 and movDirection == 4):
+				print("Found back left corner")
 				autopilot.stop()
 				time.sleep(1)
 				autopilot.turnR()
@@ -143,6 +157,7 @@ def handle(clientsocket):
 
 			# No direction to fly
 			if(sensor1 == 1 and sensor2 == 1 and sensor3 == 1 and sensor4 == 1):
+				print("No direction to fly")
 				autopilot.land()
 				time.sleep(5)
 				flying = 0
