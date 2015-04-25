@@ -8,14 +8,20 @@ THRMID=(THRMAX+THRMIN)/2
 YAWMIN=980/2
 YAWMAX=2020/2
 YAWMID=(YAWMAX+YAWMIN)/2
+YAW75=(YAWMAX+YAWMID)/2
+YAW25=(YAWMID+YAWMIN)/2
 
 PITMIN=980/2
 PITMAX=2020/2
 PITMID=(PITMAX+PITMIN)/2
+PIT75=(PITMAX+PITMID)/2
+PIT25=(PITMID+PITMIN)/2
 
 ROLMIN=980/2
 ROLMAX=2020/2
 ROLMID=(ROLMAX+ROLMIN)/2
+ROL75=(ROLMAX+ROLMID)/2
+ROL25=(ROLMID+ROLMIN)/2
 
 FREQ=55.54
 SUBCYCL=18005
@@ -91,19 +97,19 @@ def thrMax():
 #	PWM.start(THROTTLE, THRMAX, FREQ, 0)
 	SERVO.set_servo(THROTTLE, THRMAX)
 
-def thrMin():
+#def thrMin():
 #	global throttle
-	PWM.start(THROTTLE, THRMIN, FREQ, 0)
+#	PWM.start(THROTTLE, THRMIN, FREQ, 0)
 
-def stopAll():
+#def stopAll():
 #	global throttle
 #	global yaw
 #	global pitch
 #	global roll
-	PWM.stop(THROTTLE)
-	PWM.stop(YAW)
-	PWM.stop(PITCH)
-	PWM.stop(ROLL)
+#	PWM.stop(THROTTLE)
+#	PWM.stop(YAW)
+#	PWM.stop(PITCH)
+#	PWM.stop(ROLL)
 
 def takeOff():
 	balance()
@@ -126,19 +132,19 @@ def takeOff():
 #		time.sleep(1)
 
 def stop():
-	PWM.set_servo(THROTTLE, THRMID)
-	PWM.set_servo(YAW, YAWMID)
-	PWM.set_servo(PITCH, PITMID)
-	PWM.set_servo(ROLL, ROLMID)
+	SERVO.set_servo(THROTTLE, THRMID)
+	SERVO.set_servo(YAW, YAWMID)
+	SERVO.set_servo(PITCH, PITMID)
+	SERVO.set_servo(ROLL, ROLMID)
 
 def forward():
-	PWM.set_servo(PITCH, (PITMAX*.75))
+	SERVO.set_servo(PITCH, PIT75)
 
 def backward():
-	PWM.set_servo(PITCH, (PITMAX*.25))
+	SERVO.set_servo(PITCH, PIT25)
 
 def strafeL():
-	PWM.set_servo(ROLL, (ROLMAX*.25))
+	SERVO.set_servo(ROLL, ROL25)
 
 #	pitch=(PITMIN+PITMAX)/2-1
 #	PWM.set_duty_cycle(PITCH, pitch) 
@@ -147,7 +153,7 @@ def strafeL():
 #		PWM.set_duty_cycle(PITCH, pitch) 
 		
 def strafeR():
-	PWM.set_servo(ROLL, (ROLMAX*.75))
+	SERVO.set_servo(ROLL, ROL75)
 
 #	pitch=(PITMIN+PITMAX)/2+1
 #	PWM.set_duty_cycle(PITCH, pitch) 
@@ -156,10 +162,10 @@ def strafeR():
 #		PWM.set_duty_cycle(PITCH, pitch) 
 
 def turnL():
-	PWM.set_servo(YAW, (YAWMAX*.25))
+	SERVO.set_servo(YAW, YAW25)
 
 def turnR():
-	PWM.set_servo(YAW, (YAWMAX*.75))
+	SERVO.set_servo(YAW, YAW75)
 
 def balance():
 #	PWM.init_channel(1, SUBCYCL)
