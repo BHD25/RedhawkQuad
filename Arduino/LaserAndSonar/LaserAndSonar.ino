@@ -23,6 +23,8 @@ int rc = 0;
 #define sen3 42
 #define sen4 43
 
+#define laser 44
+
 char mode = '0';
 int countz = 0;
 int countzs = 0;
@@ -42,6 +44,7 @@ void setup()
   pinMode(sen2, OUTPUT);
   pinMode(sen3, OUTPUT);
   pinMode(sen4, OUTPUT);
+  pinMode(laser, INPUT);
   digitalWrite(sen1, LOW);
   digitalWrite(sen2, LOW);
   digitalWrite(sen3, LOW);
@@ -95,7 +98,7 @@ void loop()
   }
   delay(500);
 
-  if (mode == '1') {
+  if (digitalRead(laser)) {
     //Laser
     static unsigned long t = 0;
     if (millis() > (t + 2000)) { // Start timer when no data from the sensor
