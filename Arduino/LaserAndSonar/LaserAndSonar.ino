@@ -6,22 +6,22 @@ boolean recdata = true;
 boolean data;
 int buf[64];
 int rc = 0;
-#define trigPin0 23
-#define echoPin0 22
+#define frontTrig 47
+#define frontEcho 49
 
-#define trigPin1 25
-#define echoPin1 24
+#define rightTrig A0
+#define rightEcho A1
 
-#define trigPin2 27
-#define echoPin2 26
+#define backTrig 13
+#define backEcho 12
 
-#define trigPin3 29
-#define echoPin3 28
+#define leftTrig 7
+#define leftEcho 6
 
-#define sen1 40
-#define sen2 41
-#define sen3 42
-#define sen4 43
+#define senFront 40
+#define senRight 41
+#define senBack 42
+#define senLeft 43
 
 #define laser 44
 
@@ -32,23 +32,22 @@ int countzs = 0;
 void setup()
 {
   //Sonar
-  pinMode(trigPin0, OUTPUT);
-  pinMode(echoPin0, INPUT);
-  pinMode(trigPin1, OUTPUT);
-  pinMode(echoPin1, INPUT);
-  pinMode(trigPin2, OUTPUT);
-  pinMode(echoPin2, INPUT);
-  pinMode(trigPin3, OUTPUT);
-  pinMode(echoPin3, INPUT);
-  pinMode(sen1, OUTPUT);
-  pinMode(sen2, OUTPUT);
-  pinMode(sen3, OUTPUT);
-  pinMode(sen4, OUTPUT);
-  pinMode(laser, INPUT);
-  digitalWrite(sen1, LOW);
-  digitalWrite(sen2, LOW);
-  digitalWrite(sen3, LOW);
-  digitalWrite(sen4, LOW);
+  pinMode(frontTrig, OUTPUT);
+  pinMode(frontEcho, INPUT);
+  pinMode(rightTrig, OUTPUT);
+  pinMode(rightEcho, INPUT);
+  pinMode(backTrig, OUTPUT);
+  pinMode(backEcho, INPUT);
+  pinMode(leftTrig, OUTPUT);
+  pinMode(leftEcho, INPUT);
+  pinMode(senFront, OUTPUT);
+  pinMode(senRight, OUTPUT);
+  pinMode(senBack, OUTPUT);
+  pinMode(senLeft, OUTPUT);
+  digitalWrite(senFront, LOW);
+  digitalWrite(senRight, LOW);
+  digitalWrite(senBack, LOW);
+  digitalWrite(senLeft, LOW);
 
   Serial.begin(115200);
   Serial1.begin(115200);
@@ -60,41 +59,41 @@ void loop()
     mode = Serial.read();
   }
   //Sonar
-  long distance0 = getSonar(trigPin0, echoPin0);
-  long distance1 = getSonar(trigPin1, echoPin1);
-  long distance2 = getSonar(trigPin2, echoPin2);
-  long distance3 = getSonar(trigPin3, echoPin3);
-  if (distance0 < 100) {
-    digitalWrite(sen1, LOW);
+  long frontDist = getSonar(frontTrig, frontEcho);
+  long rightDist = getSonar(rightTrig, rightEcho);
+  long backDist = getSonar(backTrig, backEcho);
+  long leftDist = getSonar(leftTrig, leftEcho);
+  if (frontDist < 100) {
+    digitalWrite(senFront, LOW);
     //countzs = countzs + 1;
     Serial.println("Front");
     //Serial.println(countzs);
   }
   else {
-    digitalWrite(sen1, LOW);
+    digitalWrite(senFront, LOW);
   }
-  if (distance1 < 100) {
-    digitalWrite(sen2, HIGH);
+  if (rightDist < 100) {
+    digitalWrite(senRight, HIGH);
     Serial.println("Right");
   }
   else {
-    digitalWrite(sen2, LOW);
+    digitalWrite(senRight, LOW);
   }
-  if (distance2 < 100) {
-    digitalWrite(sen3, LOW);
+  if (backDist < 100) {
+    digitalWrite(senBack, LOW);
     Serial.println("Back");
   }
   else {
-    digitalWrite(sen3, LOW);
+    digitalWrite(senBack, LOW);
   }
-  if (distance3 < 100) {
-    digitalWrite(sen4, LOW);
+  if (leftDist < 100) {
+    digitalWrite(senLeft, LOW);
     //countz = countz + 1;
     Serial.println("Left");
     //Serial.println(countz);
   }
   else {
-    digitalWrite(sen4, LOW);
+    digitalWrite(senLeft, LOW);
   }
   delay(500);
 
