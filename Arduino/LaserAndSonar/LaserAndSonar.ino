@@ -1,7 +1,3 @@
-/*
-http://youtu.be/qUgFji4Figw
- */
-
 boolean recdata = true;
 boolean data;
 int buf[64];
@@ -18,22 +14,14 @@ int rc = 0;
 #define leftTrig 7
 #define leftEcho 6
 
-#define senFront 40
-#define senRight 41
-#define senBack 42
-#define senLeft 43
-
 #define laser 44
 
 #define pwmPin 8
-#define killPin 9
 unsigned long pulseDur = 0;
 
 #define TRIGDIST 69
 
 char mode = '0';
-int countz = 0;
-int countzs = 0;
 
 void setup()
 {
@@ -85,39 +73,18 @@ void loop()
 //  Serial.print("Left: ");
 //  printSonar(leftDist);
   if (frontDist < TRIGDIST) {
-    digitalWrite(senFront, HIGH);
-    //countzs = countzs + 1;
-    //    Serial.print("Front");
-    //Serial.println(countzs);
-  }
-  else {
-    digitalWrite(senFront, LOW);
+    Serial.print('f');
   }
   if (rightDist < TRIGDIST) {
-    digitalWrite(senRight, HIGH);
-    //    Serial.print("Right");
-  }
-  else {
-    digitalWrite(senRight, LOW);
+    Serial.print('r');
   }
   if (backDist < TRIGDIST) {
-    digitalWrite(senBack, HIGH);
-    //    Serial.print("Back");
-  }
-  else {
-    digitalWrite(senBack, LOW);
+    Serial.print('b');
   }
   if (leftDist < TRIGDIST) {
-    digitalWrite(senLeft, HIGH);
-    //countz = countz + 1;
-    //    Serial.print("Left");
-    //Serial.println(countz);
+    Serial.print('l');
   }
-  else {
-    digitalWrite(senLeft, LOW);
-  }
-
-//  Serial.println();
+  Serial.println();
 
   if (digitalRead(laser)) {
     //Laser
@@ -131,9 +98,7 @@ void loop()
   }
   pulseDur = pulseIn(pwmPin, HIGH);
   if (pulseDur > 1200)
-    digitalWrite(killPin, HIGH);
-  else
-    digitalWrite(killPin,LOW);
+    Serial.write('k');
 }
 
 int getSonar(int trigPin, int echoPin) {
@@ -226,13 +191,6 @@ int getdist() {
     }
   }
 }
-
-
-
-
-
-
-
 
 
 
