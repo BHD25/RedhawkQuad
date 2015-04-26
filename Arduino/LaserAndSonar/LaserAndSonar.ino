@@ -25,6 +25,10 @@ int rc = 0;
 
 #define laser 44
 
+#define pwmPin 8
+#define killPin 9
+unsigned long pulseDur;
+
 char mode = '0';
 int countz = 0;
 int countzs = 0;
@@ -44,6 +48,8 @@ void setup()
   pinMode(senRight, OUTPUT);
   pinMode(senBack, OUTPUT);
   pinMode(senLeft, OUTPUT);
+  pinMode(pwmPin, INPUT);
+  pinMode(killPin, OUTPUT);
   digitalWrite(senFront, LOW);
   digitalWrite(senRight, LOW);
   digitalWrite(senBack, LOW);
@@ -107,6 +113,9 @@ void loop()
     getdist();
     if (recdata) t = millis(); // Reset the timer when it receives data from the sensor
   }
+  pulseDur = pulseIn(pwmPin, HIGH);
+  if (pulseDur > 1200)
+    digitalWrite(killPin, HIGH);
 }
 
 int getSonar(int trigPin, int echoPin) {
