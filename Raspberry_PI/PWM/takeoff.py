@@ -8,7 +8,7 @@ from threading import Thread
 
 MAX_LENGTH = 4096
 
-isKill = 0
+#isKill = 0
 
 GPIO.setmode(GPIO.BCM)
 
@@ -16,10 +16,10 @@ GPIO.setup(8, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 GPIO.setup(7, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 GPIO.setup(9, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 GPIO.setup(11, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
-GPIO.setup(10, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
+GPIO.setup(15, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 
-def hasBeenKilled(channel):
-	isKill = 1
+#def hasBeenKilled(channel):
+#	isKill = 1
 
 #ser = serial.Serial('/dev/ttyACM0', 115200)
 
@@ -33,7 +33,7 @@ def hasBeenKilled(channel):
 # 7 dummy2
 # 8 dummy3
 
-GPIO.add_event_detect(10, GPIO.RISING, callback=hasBeenKilled, bouncetime=300)
+#GPIO.add_event_detect(10, GPIO.RISING, callback=hasBeenKilled, bouncetime=300)
 
 def handle(clientsocket):
 	print('Made connection\n')
@@ -67,7 +67,7 @@ def handle(clientsocket):
 				#print("Sensor4 = " + str(sensor4))
 				#buf = clientsocket.recv(MAX_LENGTH)
 				#if buf == '': return
-				#isKill = GPIO.input(10)
+				isKill = GPIO.input(15)
 				print(isKill)
 	
 				# Initial move right
