@@ -1,0 +1,29 @@
+import time
+import autopilot
+from RPIO import PWM
+
+# 1 roll
+# 2 pitch
+# 3 throttle
+# 4 yaw
+# 5 mode
+
+# 6 dummy1
+# 7 dummy2
+# 8 dummy3
+
+autopilot.initialize()
+autopilot.balance()
+time.sleep(10)
+autopilot.arm()
+#time.sleep(6)
+#autopilot.arm()
+time.sleep(3)
+autopilot.thrMax()
+time.sleep(.3)
+autopilot.balance()
+autopilot.setAltitude()
+time.sleep(5)
+autopilot.land()
+time.sleep(10)
+PWM.cleanup()

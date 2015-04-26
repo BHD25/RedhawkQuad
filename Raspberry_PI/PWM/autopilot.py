@@ -9,18 +9,24 @@ YAWMIN=980/2
 YAWMAX=2020/2
 YAWMID=(YAWMAX+YAWMIN)/2
 YAW75=(YAWMAX+YAWMID)/2
+YAW60=610
+YAW40=400
 YAW25=(YAWMID+YAWMIN)/2
 
 PITMIN=980/2
 PITMAX=2020/2
 PITMID=(PITMAX+PITMIN)/2
 PIT75=(PITMAX+PITMID)/2
+PIT60=610
+PIT40=400
 PIT25=(PITMID+PITMIN)/2
 
 ROLMIN=980/2
 ROLMAX=2020/2
 ROLMID=(ROLMAX+ROLMIN)/2
 ROL75=(ROLMAX+ROLMID)/2
+ROL60=610
+ROL40=400
 ROL25=(ROLMID+ROLMIN)/2
 
 FREQ=55.54
@@ -80,7 +86,8 @@ def minAll():
 
 def throttleCut():
 	balance()
-	SERVO.set_servo(THROTTLE, 0)
+	SERVO.set_servo(THROTTLE, THRMIN)
+	SERVO.set_servo(YAW, YAWMIN)
 	
 
 def maxAll():
@@ -143,13 +150,13 @@ def stop():
 	SERVO.set_servo(ROLL, ROLMID)
 
 def forward():
-	SERVO.set_servo(PITCH, PIT75)
+	SERVO.set_servo(PITCH, PIT60)
 
 def backward():
-	SERVO.set_servo(PITCH, PIT25)
+	SERVO.set_servo(PITCH, PIT40)
 
 def strafeL():
-	SERVO.set_servo(ROLL, ROL25)
+	SERVO.set_servo(ROLL, ROL40)
 
 #	pitch=(PITMIN+PITMAX)/2-1
 #	PWM.set_duty_cycle(PITCH, pitch) 
@@ -158,7 +165,7 @@ def strafeL():
 #		PWM.set_duty_cycle(PITCH, pitch) 
 		
 def strafeR():
-	SERVO.set_servo(ROLL, ROL75)
+	SERVO.set_servo(ROLL, ROL60)
 
 #	pitch=(PITMIN+PITMAX)/2+1
 #	PWM.set_duty_cycle(PITCH, pitch) 
@@ -167,10 +174,10 @@ def strafeR():
 #		PWM.set_duty_cycle(PITCH, pitch) 
 
 def turnL():
-	SERVO.set_servo(YAW, YAW25)
+	SERVO.set_servo(YAW, YAW40)
 
 def turnR():
-	SERVO.set_servo(YAW, YAW75)
+	SERVO.set_servo(YAW, YAW60)
 
 def balance():
 #	PWM.init_channel(1, SUBCYCL)
