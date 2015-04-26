@@ -74,7 +74,6 @@ void loop()
   if (leftDist < TRIGDIST) {
     Serial.print('l');
   }
-  Serial.println();
 
   if (digitalRead(laser)) {
     //Laser
