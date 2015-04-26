@@ -6,8 +6,8 @@ boolean recdata = true;
 boolean data;
 int buf[64];
 int rc = 0;
-#define frontTrig 47
-#define frontEcho 49
+#define frontTrig 49
+#define frontEcho 47
 
 #define rightTrig A0
 #define rightEcho A1
