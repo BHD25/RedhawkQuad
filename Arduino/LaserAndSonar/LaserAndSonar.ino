@@ -117,6 +117,8 @@ void loop()
   pulseDur = pulseIn(pwmPin, HIGH);
   if (pulseDur > 1200)
     digitalWrite(killPin, HIGH);
+  else
+    digitalWrite(killPin,LOW);
 }
 
 int getSonar(int trigPin, int echoPin) {
@@ -209,6 +211,7 @@ int getdist() {
     }
   }
 }
+
 
 
 
