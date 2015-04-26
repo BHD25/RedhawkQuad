@@ -34,17 +34,7 @@ void setup()
   pinMode(backEcho, INPUT);
   pinMode(leftTrig, OUTPUT);
   pinMode(leftEcho, INPUT);
-  pinMode(senFront, OUTPUT);
-  pinMode(senRight, OUTPUT);
-  pinMode(senBack, OUTPUT);
-  pinMode(senLeft, OUTPUT);
   pinMode(pwmPin, INPUT);
-  pinMode(killPin, OUTPUT);
-  digitalWrite(killPin, LOW);
-  digitalWrite(senFront, LOW);
-  digitalWrite(senRight, LOW);
-  digitalWrite(senBack, LOW);
-  digitalWrite(senLeft, LOW);
 
   Serial.begin(115200);
   Serial1.begin(115200);
