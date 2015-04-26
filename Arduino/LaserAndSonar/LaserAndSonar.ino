@@ -29,6 +29,8 @@ int rc = 0;
 #define killPin 9
 unsigned long pulseDur = 0;
 
+#define TRIGDIST 69
+
 char mode = '0';
 int countz = 0;
 int countzs = 0;
@@ -67,55 +69,55 @@ void loop()
   }
   //Sonar
   long frontDist = getSonar(frontTrig, frontEcho);
-  delay(500);
+  delay(100);
   long rightDist = getSonar(rightTrig, rightEcho);
-  delay(500);
+  delay(100);
   long backDist = getSonar(backTrig, backEcho);
-  delay(500);
+  delay(100);
   long leftDist = getSonar(leftTrig, leftEcho);
-  delay(500);
-  Serial.print("Front: ");
-  printSonar(frontDist);
-  Serial.print("Right: ");
-  printSonar(rightDist);
-  Serial.print("Back: ");
-  printSonar(backDist);
-  Serial.print("Left: ");
-  printSonar(leftDist);
-  if (frontDist < 69) {
+  delay(100);
+//  Serial.print("Front: ");
+//  printSonar(frontDist);
+//  Serial.print("Right: ");
+//  printSonar(rightDist);
+//  Serial.print("Back: ");
+//  printSonar(backDist);
+//  Serial.print("Left: ");
+//  printSonar(leftDist);
+  if (frontDist < TRIGDIST) {
     digitalWrite(senFront, HIGH);
     //countzs = countzs + 1;
-    Serial.print("Front");
+    //    Serial.print("Front");
     //Serial.println(countzs);
   }
   else {
     digitalWrite(senFront, LOW);
   }
-  if (rightDist < 69) {
+  if (rightDist < TRIGDIST) {
     digitalWrite(senRight, HIGH);
-    Serial.print("Right");
+    //    Serial.print("Right");
   }
   else {
     digitalWrite(senRight, LOW);
   }
-  if (backDist < 69) {
+  if (backDist < TRIGDIST) {
     digitalWrite(senBack, HIGH);
-    Serial.print("Back");
+    //    Serial.print("Back");
   }
   else {
     digitalWrite(senBack, LOW);
   }
-  if (leftDist < 69) {
+  if (leftDist < TRIGDIST) {
     digitalWrite(senLeft, HIGH);
     //countz = countz + 1;
-    Serial.print("Left");
+    //    Serial.print("Left");
     //Serial.println(countz);
   }
   else {
     digitalWrite(senLeft, LOW);
   }
 
-  Serial.println();
+//  Serial.println();
 
   if (digitalRead(laser)) {
     //Laser
@@ -224,6 +226,7 @@ int getdist() {
     }
   }
 }
+
 
 
 
