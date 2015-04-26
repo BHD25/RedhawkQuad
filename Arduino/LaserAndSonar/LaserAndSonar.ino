@@ -67,42 +67,55 @@ void loop()
   }
   //Sonar
   long frontDist = getSonar(frontTrig, frontEcho);
+  delay(500);
   long rightDist = getSonar(rightTrig, rightEcho);
+  delay(500);
   long backDist = getSonar(backTrig, backEcho);
+  delay(500);
   long leftDist = getSonar(leftTrig, leftEcho);
-  if (frontDist < 100) {
-    digitalWrite(senFront, LOW);
+  delay(500);
+  Serial.print("Front: ");
+  printSonar(frontDist);
+  Serial.print("Right: ");
+  printSonar(rightDist);
+  Serial.print("Back: ");
+  printSonar(backDist);
+  Serial.print("Left: ");
+  printSonar(leftDist);
+  if (frontDist < 69) {
+    digitalWrite(senFront, HIGH);
     //countzs = countzs + 1;
-    Serial.println("Front");
+    Serial.print("Front");
     //Serial.println(countzs);
   }
   else {
     digitalWrite(senFront, LOW);
   }
-  if (rightDist < 100) {
+  if (rightDist < 69) {
     digitalWrite(senRight, HIGH);
-    Serial.println("Right");
+    Serial.print("Right");
   }
   else {
     digitalWrite(senRight, LOW);
   }
-  if (backDist < 100) {
-    digitalWrite(senBack, LOW);
-    Serial.println("Back");
+  if (backDist < 69) {
+    digitalWrite(senBack, HIGH);
+    Serial.print("Back");
   }
   else {
     digitalWrite(senBack, LOW);
   }
-  if (leftDist < 100) {
-    digitalWrite(senLeft, LOW);
+  if (leftDist < 69) {
+    digitalWrite(senLeft, HIGH);
     //countz = countz + 1;
-    Serial.println("Left");
+    Serial.print("Left");
     //Serial.println(countz);
   }
   else {
     digitalWrite(senLeft, LOW);
   }
-  delay(500);
+
+  Serial.println();
 
   if (digitalRead(laser)) {
     //Laser
@@ -211,6 +224,8 @@ int getdist() {
     }
   }
 }
+
+
 
 
 
