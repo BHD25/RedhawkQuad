@@ -78,6 +78,11 @@ def minAll():
 	SERVO.set_servo(DUMMY2, MODESTAB)
 	SERVO.set_servo(DUMMY3, MODESTAB)
 
+def throttleCut():
+	balance()
+	SERVO.set_servo(THROTTLE, 0)
+	
+
 def maxAll():
 #	global throttle
 #	global yaw
