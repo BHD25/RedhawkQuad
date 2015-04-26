@@ -26,7 +26,7 @@ int main(int argc, const char** argv)
 	Mat drawing;
 	Mat rgb[3];
 	split(image, rgb);
-	rgb[1] -= .5*(rgb[0] + rgb[2]);
+	rgb[1] -= .75*(rgb[0] + rgb[2]);
 	GaussianBlur(rgb[1], drawing, Size(9, 9), 2, 2);
 
 	namedWindow("Display window", WINDOW_AUTOSIZE);// Create a window for display.
