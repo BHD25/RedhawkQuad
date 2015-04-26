@@ -21,7 +21,8 @@ GPIO.setup(15, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 #def hasBeenKilled(channel):
 #	isKill = 1
 
-#ser = serial.Serial('/dev/ttyACM0', 115200)
+ser = serial.Serial('/dev/ttyACM0', baudrate=115200, timeout=3.0)
+ser.open()
 
 # 1 roll
 # 2 pitch
@@ -40,7 +41,7 @@ def handle(clientsocket):
 	try:
 		flying = 1
 		while(flying):
-			print('YO MAN')
+			#print('YO MAN')
 			buf = clientsocket.recv(MAX_LENGTH)
 			navigating = 0
 			#autopilot.initialize()
@@ -56,7 +57,8 @@ def handle(clientsocket):
 
 			while(navigating == 1):
 				print("In navigation\n")
-				#serInput = ser.readline()
+				serInput = ser.readline()
+				print(repr(serInput))
 				sensor1 = GPIO.input(9)
 				#print("Sensor1 = " + str(sensor1))
 				sensor2 = GPIO.input(7)
@@ -196,7 +198,8 @@ def handle(clientsocket):
 				# Capture image and look for ball
 	except:
 		print('Error occured, closing socket')
-		socket.close()
+		clientsocket.shutdown()
+		clientsocket.close()
 
 
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
