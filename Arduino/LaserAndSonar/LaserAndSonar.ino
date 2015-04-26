@@ -27,7 +27,7 @@ int rc = 0;
 
 #define pwmPin 8
 #define killPin 9
-unsigned long pulseDur;
+unsigned long pulseDur = 0;
 
 char mode = '0';
 int countz = 0;
@@ -50,6 +50,7 @@ void setup()
   pinMode(senLeft, OUTPUT);
   pinMode(pwmPin, INPUT);
   pinMode(killPin, OUTPUT);
+  digitalWrite(killPin, LOW);
   digitalWrite(senFront, LOW);
   digitalWrite(senRight, LOW);
   digitalWrite(senBack, LOW);
@@ -208,6 +209,7 @@ int getdist() {
     }
   }
 }
+
 
 
 
