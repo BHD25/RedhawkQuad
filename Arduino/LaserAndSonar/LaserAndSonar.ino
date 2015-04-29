@@ -74,6 +74,9 @@ void loop()
   if (leftDist < TRIGDIST) {
     Serial.print('l');
   }
+  pulseDur = pulseIn(pwmPin, HIGH);
+  if (pulseDur > 1200)
+    Serial.write('k');
   Serial.println();
 
   if (digitalRead(laser)) {
@@ -86,9 +89,6 @@ void loop()
     getdist();
     if (recdata) t = millis(); // Reset the timer when it receives data from the sensor
   }
-  pulseDur = pulseIn(pwmPin, HIGH);
-  if (pulseDur > 1200)
-    Serial.write('k');
 }
 
 int getSonar(int trigPin, int echoPin) {
