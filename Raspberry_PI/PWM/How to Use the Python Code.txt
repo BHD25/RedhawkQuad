@@ -1,0 +1,11 @@
+I suggest you use VIM or SublimeText to view this file so it formats nicely when you go to read it.
+
+Also, it is suggested you have knowledge on how to use Linux systems. If you do not know how to use Linux then this part of the project will be more difficult for you.
+
+All the python files within this folder except for gclient.py must be located on the Raspberry Pi. The Raspberry Pi must also have Python2.6 installed on it.
+
+Updating Navigation:
+If you wish to modify how navigation works then you will need to modify takeoff.py. This file contains the if statements that will change direction based on what the sensors return. Should you wish to change how fast the quadcopter moves you will want to modify autopilot.py. This files contains all the methods that are called to set direction.
+
+Running the Code:
+To run the code make sure all files are on the Raspberry Pi other than gclient.py and then use the command "sudo python2.6 takeoff.py" without the quotes in an ssh session with the Raspberry Pi from your computer. Next run "python gclient.py" on your laptop/ground station. You will see in the ssh session that a connection has been made. Currently the commands that can be sent are "takeoff" (Initiates quadcopter takeoff and starts navigation) and "stop" (Stops the client you are running on the ground station). To stop the running program in the ssh session use the ctrl+c key combination.
