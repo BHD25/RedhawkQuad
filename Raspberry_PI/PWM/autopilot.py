@@ -1,6 +1,7 @@
 import time
 from RPIO import PWM
 
+# These set the PWM signal
 THRMIN=980/2
 THRMAX=2020/2
 THRMID=(THRMAX+THRMIN)/2
@@ -36,6 +37,7 @@ MODEALT = 1420/2
 MODESTAB = 1280/2
 MODELAND = 1560/2
 
+# Sets the pins on the Pi that each is associated with
 ROLL = 22
 PITCH = 27
 THROTTLE = 4
@@ -45,36 +47,26 @@ DUMMY1 = 23
 DUMMY2 = 24
 DUMMY3 = 25
 
+# Initialize PWM
 SERVO = PWM.Servo()
 
 throttle=THRMIN
-#yaw=(YAWMAX+YAWMIN)/2
-#pitch=(PITMAX+PITMIN)/2
-#roll=(ROLMAX+ROLMIN)/2
 
+# Arm method
 def arm():
-#	global throttle
-#	global yaw
-#	global pitch
-#	global roll
-#	PWM.init_channel(1, SUBCYCL)
 	SERVO.set_servo(THROTTLE, THRMIN);
 	SERVO.set_servo(YAW, YAWMAX);
 	SERVO.set_servo(PITCH, PITMID);
 	SERVO.set_servo(ROLL, ROLMID);
 	SERVO.set_servo(MODE, MODESTAB);
-#	SERVO.set_servo(DUMMY1, 1420/2);
 	SERVO.set_servo(DUMMY1, MODESTAB);
 	SERVO.set_servo(DUMMY2, MODESTAB);
 	SERVO.set_servo(DUMMY3, MODESTAB);
 	time.sleep(10);
 	SERVO.set_servo(YAW,YAWMID);
 
+# Set all signals to minimum values
 def minAll():
-#	global throttle
-#	global yaw
-#	global pitch
-#	global roll
 	SERVO.set_servo(THROTTLE, THRMIN)
 	SERVO.set_servo(YAW, YAWMIN)
 	SERVO.set_servo(PITCH, PITMIN)
@@ -84,17 +76,14 @@ def minAll():
 	SERVO.set_servo(DUMMY2, MODESTAB)
 	SERVO.set_servo(DUMMY3, MODESTAB)
 
+# Cut the throttle
 def throttleCut():
 	balance()
 	SERVO.set_servo(THROTTLE, THRMIN)
 	SERVO.set_servo(YAW, YAWMIN)
 	
-
+# Set all signals to max values
 def maxAll():
-#	global throttle
-#	global yaw
-#	global pitch
-#	global roll
 	SERVO.set_servo(THROTTLE, THRMAX)
 	SERVO.set_servo(YAW, YAWMAX)
 	SERVO.set_servo(PITCH, PITMAX)
@@ -104,83 +93,54 @@ def maxAll():
 	SERVO.set_servo(DUMMY2, MODELAND)
 	SERVO.set_servo(DUMMY3, MODELAND)
 
+# Set throttle signal to max value
 def thrMax():
-#	global throttle
-#	PWM.start(THROTTLE, THRMAX, FREQ, 0)
 	SERVO.set_servo(THROTTLE, THRMAX)
 
-#def thrMin():
-#	global throttle
-#	PWM.start(THROTTLE, THRMIN, FREQ, 0)
-
-#def stopAll():
-#	global throttle
-#	global yaw
-#	global pitch
-#	global roll
-#	PWM.stop(THROTTLE)
-#	PWM.stop(YAW)
-#	PWM.stop(PITCH)
-#	PWM.stop(ROLL)
-
+# Takeoff method
 def takeOff():
 	balance()
 	time.sleep(10)
 	arm()
-	#time.sleep(6)
-	#autopilot.arm()
 	time.sleep(3)
 	thrMax()
 	time.sleep(.3)
 	balance()
 	setAltitude()
-#	global throttle
-#	global yaw
-#	global pitch
-#	global roll
-#	while throttle<9:
-#		throttle+=.1
-#		PWM.set_duty_cycle(THROTTLE, throttle)
-#		time.sleep(1)
 
+# Stop all movement in any direction
 def stop():
 	SERVO.set_servo(THROTTLE, THRMID)
 	SERVO.set_servo(YAW, YAWMID)
 	SERVO.set_servo(PITCH, PITMID)
 	SERVO.set_servo(ROLL, ROLMID)
 
+# Fly forward
 def forward():
 	SERVO.set_servo(PITCH, PIT60)
 
+# Fly backward
 def backward():
 	SERVO.set_servo(PITCH, PIT40)
 
+# Fly left
 def strafeL():
 	SERVO.set_servo(ROLL, ROL40)
 
-#	pitch=(PITMIN+PITMAX)/2-1
-#	PWM.set_duty_cycle(PITCH, pitch) 
-#	while pitch!=(PITMIN+PITMAX)/2:
-#		pitch+=.1
-#		PWM.set_duty_cycle(PITCH, pitch) 
-		
+# Fly right		
 def strafeR():
 	SERVO.set_servo(ROLL, ROL60)
 
-#	pitch=(PITMIN+PITMAX)/2+1
-#	PWM.set_duty_cycle(PITCH, pitch) 
-#	while pitch!=(PITMIN+PITMAX)/2:
-#		pitch-=.1
-#		PWM.set_duty_cycle(PITCH, pitch) 
-
+# Turn left
 def turnL():
 	SERVO.set_servo(YAW, YAW40)
 
+# Turn right
 def turnR():
 	SERVO.set_servo(YAW, YAW60)
 
+# Set all signals to mid values
 def balance():
-#	PWM.init_channel(1, SUBCYCL)
 	SERVO.set_servo(THROTTLE, THRMID)
 	SERVO.set_servo(YAW, YAWMID)
 	SERVO.set_servo(ROLL, ROLMID)
@@ -190,23 +150,19 @@ def balance():
 	SERVO.set_servo(DUMMY2, (MODESTAB+MODELAND)/2)
 	SERVO.set_servo(DUMMY3, (MODESTAB+MODELAND)/2)
 
+# Initialize the PWM channel
 def initialize():
 	PWM.init_channel(1,SUBCYCL)
-	
+
+# Set mode signal to the land
 def land():
 	SERVO.set_servo(MODE, MODELAND)
-#	global throttle
-#	global yaw
-#	global pitch
-#	global roll
-#	while throttle<THRMIN:
-#		throttle-=.05
-#		PWM.set_duty_cycle(THROTTLE, throttle)
-#		time.sleep(1)
 
+# Set mode signal to stabilize and throttle to its minimum value
 def landed():
 	SERVO.set_servo(MODE, MODESTAB)
 	SERVO.set_servo(THROTTLE, THRMIN)
 
+# Set mode signal to static altitude
 def setAltitude():
 	SERVO.set_servo(MODE, MODEALT)
