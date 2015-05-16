@@ -1,0 +1,1 @@
+The Arduino is connected to sonars and the laser rangefinder through pins defined as constants in the code. The Arduino should be connected through a USB (Pi) to serial (Arduino) cable.
